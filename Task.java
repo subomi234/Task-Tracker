@@ -6,24 +6,18 @@ public class Task {
     private String createdAt;
     private String updatedAt;
 
-    private static int idCount = 0;
-
     public Task(){
-        idCount++;
-
-        id = idCount;
+        id = 0;
         description = "";
         status = "";
         createdAt = "";
         updatedAt = "";
     }
 
-    public Task(String description, String status, 
+    public Task(int id, String description, String status, 
                 String createdAt, String updatedAt){
 
-        idCount++;
-
-        id = idCount;
+        this.id = id;
         this.description = description;
         this.status = status;
         this.createdAt = createdAt;
