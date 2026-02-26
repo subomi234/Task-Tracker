@@ -32,39 +32,38 @@ public class Task {
 
     //create
     public int getId(){
-        return 0;
+        return id;
     }
 
     //create
     public String getDescription(){
-
-        return "";
+        return description;
     }
 
     //create
     public String getStatus(){
 
-        return "";
+        return status;
     }
 
     //create
     public String getCreatedAt(){
 
-        return "";
+        return createdAt;
     }
 
     //create
     public String getUpdatedAt(){
 
-        return "";
+        return updatedAt;
     }
 
     public void updateStatus(String status){
-        //will either change to in progress or done
+        this.status = status;
     }
 
     public void updateDescription(String description){
-        //change description and update time
+        this.description = description;
     }
 
 

@@ -13,6 +13,7 @@ public class Main {
 
         List<Task> allTasks = new ArrayList<Task>();
 
+
         /*
         need to create a list of all tasks, will be filled by json 
         will have to split lines 
@@ -52,17 +53,19 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
+            */
 
-        */
-
+        
+        
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("tasks.json"))) {
             writer.write("{\n");
             writer.write("\t\"" + args[0] + "\"");
-            writer.write(": 19");
+            writer.write(": 20");
             writer.write("\n}");
         } catch (IOException e) {
             e.printStackTrace();
         }
+            
         
     }
 }
