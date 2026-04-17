@@ -1,0 +1,4 @@
+tasktracker-frontend/node_modules
+tasktracker-frontend/dist
+tasktracker-backend/tasktracker/target
+tasktracker-backend/tasks.json
